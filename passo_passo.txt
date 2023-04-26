@@ -12,3 +12,6 @@
 
 3. Criar os componentes na prática. Ex:
 ng gc c components/'nome do componente'
+
+
+4. Escolher um componente e começar a desenvolver de fato. Comecei pelo menu-title.
