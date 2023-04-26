@@ -1,0 +1,14 @@
+1. Observar o projeto e componentizar-lo. Enxergar o quais são os componentes estruturais.
+
+2. Criar um estilo padrão Ex:
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111111;
+
+}
+
+
+3. Criar os componentes na prática. Ex:
+ng gc c components/'nome do componente'
