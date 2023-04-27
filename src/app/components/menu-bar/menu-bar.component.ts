@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent {
-
+  linkGithub: String = ""
+  linkLinkedin: String = ""
+  linkInstagram: String = ""
 }
