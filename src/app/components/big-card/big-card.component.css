@@ -1,0 +1,33 @@
+.container__big-card {
+   
+    width: 526px;
+    height: 600px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+
+
+}
+
+.big-card__title > h1{
+    font-size: 22px;
+    margin-top: 15px;
+    
+}
+
+.big-card__description{
+    margin-top: 10px;
+}
+
+.big-card__description > p > a {
+    color: gray;
+    
+    text-decoration: none;
+}
+.big-card__photo > a > img {
+    width: 100%; /*faz o conteudo da foto pegar somente a largura do container*/
+    
+}

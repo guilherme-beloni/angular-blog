@@ -15,3 +15,5 @@ ng gc c components/'nome do componente'
 
 
 4. Escolher um componente e começar a desenvolver de fato. Comecei pelo menu-title.
+
+5. Criei uma pasta "pages" e dentro dela uma pasta "home". Para organizar o html
