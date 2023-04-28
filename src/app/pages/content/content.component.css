@@ -13,6 +13,7 @@
 
 
 .content__cover > img {
+    margin-top: 25px;
     width: 800px;
     min-width: 800px;
     height: 420px;
@@ -25,6 +26,13 @@
     justify-content: center;
 }
 
+.content__description > p {
+    color: rgb(161, 161, 161);
+     
+}
+
 .content__description {
+    
     margin-top: 25px;   
 }
+

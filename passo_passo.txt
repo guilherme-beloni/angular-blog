@@ -21,3 +21,7 @@ ng gc c components/'nome do componente'
 6. Estilizar os componentes Css.
 
 7. Dar inteligência aos componentes.
+
+8. Para criar um menu fixo é só eu colocar o menu-bar no app ContentComponent, junto com seu Css
+
+9. Criar novas paginas / estilizar
