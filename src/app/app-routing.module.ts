@@ -9,7 +9,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path:'content', //serve para adicionar páginas no nosso sistema| Posso apagar o appcomponente do html principal
+    path:'content/:id', //serve para adicionar páginas no nosso sistema| Posso apagar o appcomponente do html principal
     component: ContentComponent
   }
 ];
