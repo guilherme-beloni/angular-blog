@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake } from '../../data/dataFake';
+
 
 @Component({
   selector: 'app-content',
@@ -6,7 +9,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent {
-  photoCover: string = 'https://www.callofduty.com/content/dam/atvi/infinityward/iw-touchui/news/feature/2022/11/WZ2-S01-DMZ-TACTICS-TOUT.jpg'
-  contentTitle: string = 'Meu Artigo'
-  contentDescription: string = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nihil accusantium voluptatem aut expedita nemo ipsa, ad blanditiis obcaecati ea eveniet unde ratione nesciunt!aloaaaPossimus nesciunt iste praesentium consectetur numquam?'
-}
+  photoCover: string = ''
+  contentTitle: string = ''
+  contentDescription: string = ''
+  private id: string | null= '0'
+
+  constructor(
+    private route: ActivatedRoute
+    ){ }
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(value => {
+      this.id = value.get('id')}
+      //console.log(value.get('id'))}
+    )
+    this.setValuesToComponent(this.id)
+  }
+
+
+  setValuesToComponent(id:string | null){
+      const result = dataFake.filter(
+        article => article.id == id
+      )[0]
+      //console.log(result.title)
+      this.id = result.id
+      this.contentTitle = result.title
+      this.contentDescription = result.description
+      this.photoCover = result.photo
+       
+  }
+} 
+
+
+
